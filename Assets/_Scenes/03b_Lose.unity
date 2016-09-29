@@ -688,6 +688,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: ed65dde16a38c42a79b8011ae4ed0bbb,
+        type: 2}
+    - target: {fileID: 11474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
   m_RootGameObject: {fileID: 1683967728}
@@ -835,7 +844,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: ed65dde16a38c42a79b8011ae4ed0bbb, type: 2}
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
