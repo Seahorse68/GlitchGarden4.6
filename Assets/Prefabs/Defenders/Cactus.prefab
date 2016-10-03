@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 406370}
   - 212: {fileID: 21206372}
+  - 61: {fileID: 6187390}
   m_Layer: 0
   m_Name: Courgette
   m_TagString: Untagged
@@ -41,6 +42,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 406374}
   - 95: {fileID: 9506374}
+  - 61: {fileID: 6111150}
+  - 114: {fileID: 11403994}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -56,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 106370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .910000026, y: .00999999978, z: 0}
-  m_LocalScale: {x: .661136508, y: .661136508, z: .661136508}
+  m_LocalScale: {x: .595022857, y: .595022857, z: .595022857}
   m_Children: []
   m_Father: {fileID: 406374}
   m_RootOrder: 1
@@ -68,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 106372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0199999996, y: -.0199999996, z: 0}
-  m_LocalScale: {x: -.772412777, y: .801378429, z: .772412837}
+  m_LocalScale: {x: -.695171535, y: .72124064, z: .695171595}
   m_Children: []
   m_Father: {fileID: 406374}
   m_RootOrder: 0
@@ -86,6 +89,28 @@ Transform:
   - {fileID: 406370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6111150
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106374}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!61 &6187390
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106370}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .560000002, y: .560000002}
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9506374
 Animator:
   serializedVersion: 3
@@ -101,6 +126,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11403994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b93d2dd9b88964582e3a5e33738056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21206372
 SpriteRenderer:
   m_ObjectHideFlags: 1
