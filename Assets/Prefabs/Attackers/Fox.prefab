@@ -10,7 +10,9 @@ GameObject:
   - 4: {fileID: 455198}
   - 95: {fileID: 9555200}
   - 114: {fileID: 11439266}
+  - 114: {fileID: 11433130}
   - 61: {fileID: 6195900}
+  - 50: {fileID: 5033130}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -59,6 +61,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 455198}
   m_RootOrder: 0
+--- !u!50 &5033130
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155198}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6195900
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -85,6 +102,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11433130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72c6840de2e7fe4281a54f51164a122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11439266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f9b05e4f4d6b445a1fdbda805e3a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpeed: 0
 --- !u!212 &21255200
 SpriteRenderer:
   m_ObjectHideFlags: 1

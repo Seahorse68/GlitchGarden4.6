@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Attacker : MonoBehaviour {
 
-	[Range(-1f, 1.5f)]
-	public float currentSpeed;
+	private float currentSpeed;
+	private GameObject currentTarget;
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +25,13 @@ public class Attacker : MonoBehaviour {
 		currentSpeed = speed;
 	}
 	
+	// called from the animator at time of actual blow
 	public void StrikeCurrentTarget(float damage) {
 		Debug.Log (name + " Causing damage: " + damage);
+	}
+	
+	public void Attack (GameObject obj) {
+		currentTarget = obj;
+		
 	}
 }
