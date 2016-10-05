@@ -4,12 +4,12 @@ using System.Collections;
 [RequireComponent (typeof(Attacker))]
 public class Fox : MonoBehaviour {
 
-	private Animator anim;
+	private Animator animator;
 	private Attacker attacker;
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		attacker = GetComponent<Attacker>();
 	}
 	
@@ -28,9 +28,9 @@ public class Fox : MonoBehaviour {
 		}
 		
 		if (obj.GetComponent<Stone>()) {
-			anim.SetTrigger ("jumpTrigger");
+			animator.SetTrigger ("jumpTrigger");
 		} else {
-			anim.SetBool ("isAttacking", true);
+			animator.SetBool ("isAttacking", true);
 			attacker.Attack (obj);
 		}
 	}

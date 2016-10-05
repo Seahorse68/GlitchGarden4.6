@@ -4,12 +4,12 @@ using System.Collections;
 [RequireComponent (typeof(Attacker))]
 public class Lizard : MonoBehaviour {
 	
-	private Animator anim;
+	private Animator animator;
 	private Attacker attacker;
 	
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		attacker = GetComponent<Attacker>();
 	}
 	
@@ -27,7 +27,7 @@ public class Lizard : MonoBehaviour {
 			return;
 		}
 		
-		anim.SetBool ("isAttacking", true);
+		animator.SetBool ("isAttacking", true);
 		attacker.Attack (obj);
 	}
 }
