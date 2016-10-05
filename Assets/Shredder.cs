@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : MonoBehaviour {
-
-	public float speed;
-	public float damage;
+public class Shredder : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +10,10 @@ public class Projectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Vector3.right * speed * Time.deltaTime);
+	
+	}
+	
+	void OnTriggerEnter2D (Collider2D collider) {
+		Destroy (collider.gameObject);
 	}
 }
