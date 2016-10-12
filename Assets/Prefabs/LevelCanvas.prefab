@@ -10,6 +10,8 @@ GameObject:
   - 224: {fileID: 22464874}
   - 222: {fileID: 22264874}
   - 114: {fileID: 11464874}
+  - 114: {fileID: 11471140}
+  - 61: {fileID: 6171140}
   m_Layer: 5
   m_Name: CoreGame
   m_TagString: Untagged
@@ -88,6 +90,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &6171140
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164874}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1200, y: 675}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11464874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,6 +337,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11471140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b916ee09e3d343459045b3ce72b8576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 0}
 --- !u!222 &22264874
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -451,7 +476,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -1.9531697e-05, y: 0}
+  m_AnchoredPosition: {x: 5, y: 3}
   m_SizeDelta: {x: 1600, y: 900}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
