@@ -4,11 +4,10 @@ using System.Collections;
 public class DefenderSpawner : MonoBehaviour {
 
 	public Camera myCamera;
+	
+	private GameObject parent;
 
 	// Use this for initialization
-	private GameObject parent;
-	
-	
 	void Start() {
 		parent = GameObject.Find ("Defenders");
 		

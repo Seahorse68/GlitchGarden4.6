@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Attacker : MonoBehaviour {
 
+	[Tooltip ("Average number of seconds betwen appearances")]
+	public float seenEverySeconds;
 	private float currentSpeed;
 	private GameObject currentTarget;
 	private Animator animator;

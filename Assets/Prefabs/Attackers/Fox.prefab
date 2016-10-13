@@ -13,7 +13,6 @@ GameObject:
   - 114: {fileID: 11433130}
   - 114: {fileID: 11409276}
   - 61: {fileID: 6195900}
-  - 50: {fileID: 5033130}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -44,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.94799995, y: 3.99000001, z: 0}
+  m_LocalPosition: {x: 12, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 455200}
@@ -62,21 +61,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 455198}
   m_RootOrder: 0
---- !u!50 &5033130
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155198}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &6195900
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -137,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f9b05e4f4d6b445a1fdbda805e3a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seenEverySeconds: 10
 --- !u!212 &21255200
 SpriteRenderer:
   m_ObjectHideFlags: 1
