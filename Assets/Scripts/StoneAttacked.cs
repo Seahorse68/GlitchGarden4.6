@@ -1,25 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shooter : MonoBehaviour {
-
-	public GameObject projectile, gun;
-	
-	private GameObject projectileParent;
+public class StoneAttacked : MonoBehaviour {
 	private Animator animator;
 	private Spawner myLaneSpawner;
 	
 	void Start() {
 	
-		// get animator of lizard or fox
-		animator = gameObject.GetComponent<Animator>();
-		
-		// creates a parent if necessary
-		projectileParent = GameObject.Find ("Projectiles");
-		
-		if (!projectileParent) {
-			projectileParent = new GameObject("Projectiles");
-		}
+		animator = GameObject.FindObjectOfType<Animator>();
 		
 		SetMyLaneSpawner();
 	}
@@ -31,7 +19,6 @@ public class Shooter : MonoBehaviour {
 		foreach (Spawner spawner in spawnerArray) {
 			if (spawner.transform.position.y == transform.position.y) {
 				myLaneSpawner = spawner;
-				//print ("spawner " + spawner.transform.position.y);
 				return;
 				
 			}
@@ -63,14 +50,5 @@ public class Shooter : MonoBehaviour {
 		
 		// attacker in lane, but behind us
 		return false;
-	}
-
-	
-	
-	
-	private void Fire () {
-		GameObject newProjectile = Instantiate (projectile) as GameObject;
-		newProjectile.transform.parent = projectileParent.transform;
-		newProjectile.transform.position = gun.transform.position;
 	}
 }

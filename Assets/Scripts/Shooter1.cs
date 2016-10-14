@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shooter : MonoBehaviour {
+public class Shooter1 : MonoBehaviour {
 
 	public GameObject projectile, gun;
 	
@@ -11,7 +11,7 @@ public class Shooter : MonoBehaviour {
 	
 	void Start() {
 	
-		// get animator of lizard or fox
+		//animator = GameObject.FindObjectOfType<Animator>();
 		animator = gameObject.GetComponent<Animator>();
 		
 		// creates a parent if necessary
@@ -31,7 +31,7 @@ public class Shooter : MonoBehaviour {
 		foreach (Spawner spawner in spawnerArray) {
 			if (spawner.transform.position.y == transform.position.y) {
 				myLaneSpawner = spawner;
-				//print ("spawner " + spawner.transform.position.y);
+				print ("spawner " + spawner.transform.position.y);
 				return;
 				
 			}

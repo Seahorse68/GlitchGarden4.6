@@ -7,7 +7,6 @@ public class Spawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -21,8 +20,9 @@ public class Spawner : MonoBehaviour {
 	
 	void Spawn (GameObject myGameObject) {
 		GameObject myAttacker = Instantiate (myGameObject) as GameObject;
-		myAttacker.transform.parent = transform;
-		myGameObject.transform.position = transform.position;
+		
+		myAttacker.transform.parent = transform;		
+		myAttacker.transform.position = transform.position;		
 	}
 	
 	bool isTimeToSpawn (GameObject attackerGameObject) {
@@ -42,7 +42,5 @@ public class Spawner : MonoBehaviour {
 		} else {
 			return false;
 		}
-	}
-	
-	
+	}	
 }
