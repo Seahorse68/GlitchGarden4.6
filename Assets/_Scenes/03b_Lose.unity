@@ -206,7 +206,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -654, y: 7}
+  m_AnchoredPosition: {x: -633, y: -131}
   m_SizeDelta: {x: 160, y: 59}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &530429384
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -650,15 +650,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -631
+      value: -506
       objectReference: {fileID: 0}
     - target: {fileID: 22474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 73
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 22474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 230
+      value: 438
       objectReference: {fileID: 0}
     - target: {fileID: 22474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
       propertyPath: m_SizeDelta.y
@@ -696,6 +696,14 @@ Prefab:
     - target: {fileID: 11474734, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474732, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
+      propertyPath: m_Text
+      value: Start Again
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474732, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22fa35da13a41e84994b3637bce2215a, type: 2}
@@ -801,8 +809,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -631, y: 73}
-  m_SizeDelta: {x: 230, y: 70}
+  m_AnchoredPosition: {x: -506, y: -65}
+  m_SizeDelta: {x: 438, y: 70}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1683967730
 MonoBehaviour:
@@ -879,12 +887,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Start Again
 --- !u!222 &1683967732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1027,11 +1035,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22442784, guid: 913d45b124dba2041a33c018a116125e, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -654
+      value: -633
       objectReference: {fileID: 0}
     - target: {fileID: 22442784, guid: 913d45b124dba2041a33c018a116125e, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 7
+      value: -131
       objectReference: {fileID: 0}
     - target: {fileID: 22442784, guid: 913d45b124dba2041a33c018a116125e, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1064,6 +1072,10 @@ Prefab:
     - target: {fileID: 22442784, guid: 913d45b124dba2041a33c018a116125e, type: 2}
       propertyPath: m_Pivot.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442782, guid: 913d45b124dba2041a33c018a116125e, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 913d45b124dba2041a33c018a116125e, type: 2}
