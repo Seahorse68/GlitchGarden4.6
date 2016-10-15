@@ -603,6 +603,10 @@ Prefab:
       propertyPath: myCamera
       value: 
       objectReference: {fileID: 1151095820}
+    - target: {fileID: 11413778, guid: fdb03668b8130304684c6cf1d7e6a1bb, type: 2}
+      propertyPath: m_Text
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb03668b8130304684c6cf1d7e6a1bb, type: 2}
   m_RootGameObject: {fileID: 1949090946}
@@ -1419,7 +1423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9999
+  m_Text: 100
 --- !u!222 &1367077069
 CanvasRenderer:
   m_ObjectHideFlags: 0
