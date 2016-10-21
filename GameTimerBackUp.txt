@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
 public class GameTimer : MonoBehaviour {
-	
+
 	public float levelSeconds = 100;
 	
 	private Slider slider;
@@ -12,16 +12,15 @@ public class GameTimer : MonoBehaviour {
 	private LevelManager levelManager;
 	private GameObject winLabel;
 	
-	// Use this for initialization
+		// Use this for initialization
 	void Start () {
 		slider = GetComponent<Slider>();
 		audioSource = GetComponent<AudioSource>();
 		levelManager = GameObject.FindObjectOfType<LevelManager>();		
 		FindYouWin ();
 		winLabel.SetActive (false);
-		
 	}
-	
+
 	void FindYouWin ()
 	{
 		winLabel = GameObject.Find ("YouWin");
@@ -36,13 +35,7 @@ public class GameTimer : MonoBehaviour {
 		
 		bool timeIsUp = (Time.timeSinceLevelLoad >= levelSeconds);
 		if ( timeIsUp && !isEndOfLevel) {
-		
-			// stuff
-			Attacker[] attackers = GameObject.FindObjectsOfType<Attacker>();
-			foreach (Attacker attacker in attackers) {
-				attacker.GetComponent<Animator>().SetBool ("isFinished", true);
-			}
-		
+			
 			audioSource.Play ();
 			winLabel.SetActive (true);
 			

@@ -25,7 +25,7 @@ AnimationClip:
         value: {x: 0, y: 1.20000005, z: 0}
         inSlope: {x: 0, y: .242500007, z: 0}
         outSlope: {x: 0, y: .242500007, z: 0}
-        tangentMode: 125014052
+        tangentMode: 147226660
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Top/Star
@@ -37,12 +37,12 @@ AnimationClip:
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: .0874999985, y: .0874999985, z: .0874999985}
         outSlope: {x: .0874999985, y: .0874999985, z: .0874999985}
-        tangentMode: 127600304
+        tangentMode: 154996172
       - time: 4
         value: {x: .349999994, y: .349999994, z: .349999994}
         inSlope: {x: .0874999985, y: .0874999985, z: .0874999985}
         outSlope: {x: .0874999985, y: .0874999985, z: .0874999985}
-        tangentMode: 130284020
+        tangentMode: 149695536
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Top/Star
